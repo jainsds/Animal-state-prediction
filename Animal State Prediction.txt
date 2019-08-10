@@ -1,0 +1,5 @@
+In this problem I have used Random forest classifier for classification task as it is very flexible and produces powerful results with good accuracy as compared to SVM .Another reason 
+for using random forests is that there are many features in this dataset.Age_upon_outcome_(days) is directly correlated with age_upon_outcome_(years).Hence i hae removed 
+age_upon_outcome_(days),similarly i removed age_upon_intake_(days). Age_upon_intake is same as age_upon_intake(years) hence I removed age_upon_intake and age_upon_outcome.
+I removed irrlevant features such as intake_datetime , outcome_datetime,intake_monthyear,outcome_monthyear.I filled null values with maximum occuring elements. I encoded the feature
+values  using LabelEncoder() function .Then I tuned parameters such as n_estimators, max_depth ,max_features for Random Forest classifier by using cross validation .
